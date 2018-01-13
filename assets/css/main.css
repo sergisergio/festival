@@ -92,7 +92,37 @@ ul li {
 .social-block li a:focus {
     color: #000;
 }
-
+.affiche {
+    position: relative;
+    box-shadow: 6px 6px 25px;
+}
+.button-icon    
+{
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background: #0769AF;
+    padding: 3px;
+    transition : 0.3s ease-in;
+}
+.button-icon:hover {
+    background: #1f98ef;
+}
+.titre-film {
+    position: absolute;
+    bottom: 0;
+    width: 360px;
+    height: 30px;
+    background: #0769AF;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    
+    
+}
 .btn.active.focus,
 .btn.active:focus,
 .btn.focus,
@@ -341,10 +371,24 @@ ul li {
 }
 
 .navbar-solid {
-    background-color: #000 !important;
+    background-color: #fff !important;
     padding: 0 !important;
+    box-shadow: 5px 5px 5px #999; 
+     -moz-box-shadow: 5px 5px 5px #999;
+     -webkit-box-shadow: 5px 5px 5px #999;
     -webkit-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
+}
+
+.navbar-solid li a {
+    color: #000 !important;
+    border-bottom: 1px solid transparent !important;
+}
+.navbar-solid li a:focus,
+.navbar-solid li a:hover
+{
+      background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .site-branding {
@@ -360,6 +404,10 @@ ul li {
     margin-right: 5px;
     letter-spacing: 3px;
     text-transform: uppercase;
+}
+.logofestival {
+    width: 150px;
+    display: none;
 }
 
 .site-branding .logo:focus,

@@ -10,8 +10,16 @@
 
     <!-- css -->
     <link rel="stylesheet" href="frameworks/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="frameworks/ionicons/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!--<link rel="stylesheet" href="assets/css/demo.css">-->
+    <link rel="stylesheet" href="assets/css/component.css">
+    <link rel="stylesheet" href="assets/css/content.css">
+
+
+    <script src="assets/js/modernizr.custom.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#site-nav">
@@ -24,7 +32,7 @@
                     <a class="logo" href="index.html">
 
                         <!-- logo image  -->
-                        <img src="assets/images/logo.png" alt="Logo"> Festival 2018
+                        <img class="logofestival" src="assets/images/Festival/0.5x/Plan%20de%20travail%201%20copie%205@0.5x.png" alt="Logo">
                     </a>
                 </div>
 
@@ -61,9 +69,40 @@
 
             <h1>Festival des films de plein air</h1>
 
-            <p>Projection de films d'auteur</p>
+            <p>Entrée gratuite</p>
+            <div class="morph-button morph-button-modal morph-button-modal-2 morph-button-fixed">
+                <button type="button">Pré-inscription</button>
+                <div class="morph-content">
+                    <div>
+                        <div class="content-style-form content-style-form-1">
+                            <span class="icon icon-close"></span>
+                            <h2>Pré-inscription</h2>
 
-            <a class="btn btn-white" data-scroll href="#registration">Pré-inscription</a>
+                            <form méthod="post" action="#">
+                                <p><label>Nom</label><input type="text" /></p>
+                                <p><label>Prénom</label><input type="text" /></p>
+                                <p><label>Email</label><input type="text" /></p>
+                                <select name="menu_destination">
+                                    <option value="#">Dimanche 05 août à 18h00 : Into the wild</option>
+                                    <option value="#">Dimanche 05 août à 20h00 : Le cercle des poètes disparus</option>
+                                    <option value="#">Dimanche 05 août à 22h00 : 2001 L'Odyssée de l'espace</option>
+                                    <option value="#">Lundi 06 août à 18h00 : Le bon, la brute et le truand</option>
+                                    <option value="#">Lundi 06 août à 20h00 : Big Fish</option>
+                                    <option value="#">Lundi 06 août à 22h00 : Vol au-dessus d'un nid de coucou</option>
+                                     <option value="#">Mardi 07 août à 18h00 : Will Hunting</option>
+                                    <option value="#">Mardi 07 août à 20h00 : American Beauty</option>
+                                    <option value="#">Mardi 07 août à 22h00 : The Imitation Game</option>
+                                     <option value="#">Mercredi 08 août à 18h00 : Bienvenue à Gattaca</option>
+                                    <option value="#">Mercredi 08 août à 20h00 : O Brother</option>
+                                    <option value="#">Mercredi 08 août à 22h00 : Forrest Gump</option>
+                                </select>
+                                <p><button>Envoyer</button></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<a class="btn btn-white" data-scroll href="#registration">Pré-inscription</a>-->
 
         </div>
     </header>
@@ -107,100 +146,124 @@
         <!-- /.container -->
     </section>
 
-    <section class="section bg-image-1 facts text-center">
-        
-    </section>
+    <!--<section class="section bg-image-1 facts text-center">
+
+    </section>-->
     <section id="location" class="section location">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-3">
+                <!--<div class="col-sm-3">
                     <h3 class="section-title">Cà se passe ici !</h3>
                     <address>
                         <p>Parc Monceau<br> 35 boulevard de Courcelles<br> 75008 PARIS<br> Téléphone : 06.47.51.22.85<br> Email: contact@philippetraon.com</p>
                     </address>
-                </div>
-                <div class="col-sm-9">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10495.532706460806!2d2.299344643593271!3d48.8795035575588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc+Monceau!5e0!3m2!1sfr!2sfr!4v1514225756510" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>-->
+                <div class="col-sm-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10495.532706460806!2d2.299344643593271!3d48.8795035575588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc+Monceau!5e0!3m2!1sfr!2sfr!4v1514225756510" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    
                 </div>
             </div>
         </div>
     </section>
-    <section id="facts" class="section bg-image-1 facts text-center">
-    </section>
+    
 
     <section id="films" class="section location">
         <div class="container">
-        <div class="row">
-        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h1 class="galerie-titre">Les films</h1>
+            <div class="row">
+                <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="galerie-titre">Les films</h1>
+                </div>
+
+                <div align="center">
+                    <button class="btn btn-default filter-button" data-filter="all">Tous les jours</button>
+                    <button class="btn btn-default filter-button" data-filter="dimanche">Dimanche 5</button>
+                    <button class="btn btn-default filter-button" data-filter="lundi">Lundi 6</button>
+                    <button class="btn btn-default filter-button" data-filter="mardi">Mardi 7</button>
+                    <button class="btn btn-default filter-button" data-filter="mercredi">Mercredi 8</button>
+                </div>
+                <br/>
+
+
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dimanche">
+                    <img src="assets/images/films/intothewild.jpg" class="img-responsive affiche">
+                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                    <div class="titre-film">Dimanche 5 août 18:00</div>
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dimanche">
+                    <img src="assets/images/films/cercle.jpg" class="img-responsive  affiche">
+                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                    <div class="titre-film">Dimanche 5 août 20:00</div>
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dimanche">
+                    <img src="assets/images/films/2001.jpg" class="img-responsive  affiche">
+                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                    <div class="titre-film">Dimanche 5 août 22:00</div>
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter lundi">
+                    <img src="assets/images/films/bon.jpg" class="img-responsive  affiche">
+                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                    <div class="titre-film">Lundi 6 août 18:00</div>
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter lundi">
+                    <img src="assets/images/films/bigfish.jpg" class="img-responsive  affiche">
+                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                    <div class="titre-film">Lundi 6 août 20:00</div>
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter lundi">
+                    <img src="assets/images/films/volcoucou.jpg" class="img-responsive  affiche">
+                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                    <div class="titre-film">Lundi 6 août 22:00</div>
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mardi">
+                    <img src="assets/images/films/willhunting.jpg" class="img-responsive  affiche">
+                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                    <div class="titre-film">Mardi 7 août 18:00</div>
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mardi">
+                    <img src="assets/images/films/american.jpg" class="img-responsive  affiche">
+                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                    <div class="titre-film">Mardi 7 août 20:00</div>
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mardi">
+                    <img src="assets/images/films/imitation.jpg" class="img-responsive  affiche">
+                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                    <div class="titre-film">Mardi 7 août 22:00</div>
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mercredi">
+                    <img src="assets/images/films/bienvenue.jpg" class="img-responsive  affiche">
+                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                    <div class="titre-film">Mercredi 8 août 18:00</div>
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mercredi">
+                    <img src="assets/images/films/brother.jpg" class="img-responsive  affiche">
+                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                    <div class="titre-film">Mercredi 8 août 20:00</div>
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mercredi">
+                    <img src="assets/images/films/forrest.jpg" class="img-responsive  affiche">
+                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                    <div class="titre-film">Mercredi 8 août 22:00</div>
+                </div>
+            </div>
         </div>
-
-        <div align="center">
-            <button class="btn btn-default filter-button" data-filter="all">Tous les jours</button>
-            <button class="btn btn-default filter-button" data-filter="dimanche">Dimanche 5</button>
-            <button class="btn btn-default filter-button" data-filter="lundi">Lundi 6</button>
-            <button class="btn btn-default filter-button" data-filter="mardi">Mardi 7</button>
-            <button class="btn btn-default filter-button" data-filter="mercredi">Mercredi 8</button>
-        </div>
-        <br/>
-
-
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dimanche">
-                <img src="assets/images/films/intothewild.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dimanche">
-                <img src="assets/images/films/cercle.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dimanche">
-                <img src="assets/images/films/2001.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter lundi">
-                <img src="assets/images/films/bon.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter lundi">
-                <img src="assets/images/films/bigfish.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter lundi">
-                <img src="assets/images/films/volcoucou.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mardi">
-                <img src="assets/images/films/willhunting.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mardi">
-                <img src="assets/images/films/american.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mardi">
-                <img src="assets/images/films/imitation.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mercredi">
-                <img src="assets/images/films/bienvenue.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mercredi">
-                <img src="assets/images/films/brother.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mercredi">
-                <img src="assets/images/films/forrest.jpg" class="img-responsive">
-            </div>
-        </div>
-    </div>
     </section>
     <section id="facts" class="section bg-image-1 facts text-center">
-        
-        
+
+
     </section>
-    
+
     <section id="contact" class="section registration">
         <div class="container">
             <div class="row">
@@ -234,10 +297,10 @@
 
                     <div class="col-sm-6">
                         <div class="form-group">
-                        <textarea placeholder="Message" class="form-control" id="message" required style="width:100%;height:240px;"></textarea>
-                        
+                            <textarea placeholder="Message" class="form-control" id="message" required style="width:100%;height:240px;"></textarea>
+
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="text-center mt20">
@@ -247,7 +310,7 @@
         </div>
     </section>
 
-    
+
 
     <section class="section partenaires">
         <div class="container">
@@ -275,7 +338,7 @@
         </div>
     </section>
 
-    
+
 
 
     <footer class="site-footer">
@@ -298,35 +361,114 @@
     <script src="frameworks/jquery/dist/jquery.min.js"></script>
     <script src="frameworks/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="frameworks/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/uiMorphingButton_fixed.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        $(document).ready(function(){
+        (function() {
+            var docElem = window.document.documentElement,
+                didScroll, scrollPosition;
 
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
-        
-        if(value == "all")
-        {
-            //$('.filter').removeClass('hidden');
-            $('.filter').show('1000');
-        }
-        else
-        {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
-            
-        }
-    });
-    
-    if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
-$(this).addClass("active");
+            // trick to prevent scrolling when opening/closing button
+            function noScrollFn() {
+                window.scrollTo(scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0);
+            }
 
-});
+            function noScroll() {
+                window.removeEventListener('scroll', scrollHandler);
+                window.addEventListener('scroll', noScrollFn);
+            }
+
+            function scrollFn() {
+                window.addEventListener('scroll', scrollHandler);
+            }
+
+            function canScroll() {
+                window.removeEventListener('scroll', noScrollFn);
+                scrollFn();
+            }
+
+            function scrollHandler() {
+                if (!didScroll) {
+                    didScroll = true;
+                    setTimeout(function() {
+                        scrollPage();
+                    }, 60);
+                }
+            };
+
+            function scrollPage() {
+                scrollPosition = {
+                    x: window.pageXOffset || docElem.scrollLeft,
+                    y: window.pageYOffset || docElem.scrollTop
+                };
+                didScroll = false;
+            };
+
+            scrollFn();
+
+            [].slice.call(document.querySelectorAll('.morph-button')).forEach(function(bttn) {
+                new UIMorphingButton(bttn, {
+                    closeEl: '.icon-close',
+                    onBeforeOpen: function() {
+                        // don't allow to scroll
+                        noScroll();
+                    },
+                    onAfterOpen: function() {
+                        // can scroll again
+                        canScroll();
+                    },
+                    onBeforeClose: function() {
+                        // don't allow to scroll
+                        noScroll();
+                    },
+                    onAfterClose: function() {
+                        // can scroll again
+                        canScroll();
+                    }
+                });
+            });
+
+            // for demo purposes only
+            [].slice.call(document.querySelectorAll('form button')).forEach(function(bttn) {
+                bttn.addEventListener('click', function(ev) {
+                    ev.preventDefault();
+                });
+            });
+        })();
+
     </script>
+
+
+
+    <script>
+        $(document).ready(function() {
+
+            $(".filter-button").click(function() {
+                var value = $(this).attr('data-filter');
+
+                if (value == "all") {
+                    //$('.filter').removeClass('hidden');
+                    $('.filter').show('1000');
+                } else {
+                    //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+                    //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                    $(".filter").not('.' + value).hide('3000');
+                    $('.filter').filter('.' + value).show('3000');
+
+                }
+            });
+
+            if ($(".filter-button").removeClass("active")) {
+                $(this).removeClass("active");
+            }
+            $(this).addClass("active");
+
+        });
+
+    </script>
+
+
 </body>
 
 </html>
