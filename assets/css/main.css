@@ -20,6 +20,8 @@ body {
     line-height: 1.6;
     position: relative;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    background: #FFFBDA;
 }
 
 a {
@@ -64,7 +66,7 @@ ul li {
 .list-arrow-right li::before {
     position: absolute;
     left: 0;
-    color: #4e4e4e;
+    color: #8dc06f;
     font-family: "Ionicons";
 }
 
@@ -92,37 +94,103 @@ ul li {
 .social-block li a:focus {
     color: #000;
 }
+
 .affiche {
     position: relative;
     box-shadow: 6px 6px 25px;
 }
-.button-icon    
-{
+
+.button-icon {
     position: absolute;
     top: 10px;
     left: 25px;
     cursor: pointer;
     width: 60px;
     height: 60px;
-    background: #0769AF;
+    background: #8DC06F;
     padding: 3px;
-    transition : 0.3s ease-in;
+    transition: 0.3s ease-in;
 }
+
 .button-icon:hover {
-    background: #1f98ef;
+    background: #447E22;
 }
+
 .titre-film {
     position: absolute;
     bottom: 0;
     width: 360px;
     height: 30px;
-    background: #0769AF;
+    background: #20395F;
     color: #fff;
     font-weight: bold;
     text-align: center;
-    
-    
 }
+
+@media(max-width: 1200px) {
+    .titre-film {
+        width: 294px;
+    }
+}
+
+@media(max-width: 991px) {
+    .titre-film {
+        width: 220px;
+    }
+}
+
+.debut {
+
+    box-shadow: 6px 6px 25px;
+    padding: 15px;
+    margin: 15px;
+    background-color: #fff;
+    height: 380px;
+}
+
+.debut h3 {
+    margin: 20px auto 50px auto!important;
+}
+@media(max-width: 991px) {
+    .debut {
+    height: 500px;
+    }
+}
+@media(max-width: 767px) {
+    .debut {
+    height: 350px;
+    }
+}
+@media(max-width: 540px) {
+    .debut {
+    height: 380px;
+    }
+}
+@media(max-width: 460px) {
+    .debut {
+    height: 420px;
+    }
+}
+@media(max-width: 400px) {
+    .debut {
+    height: 460px;
+    }
+}
+@media(max-width: 365px) {
+    .debut {
+    height: 560px;
+    }
+}
+
+.articles {
+    /*width: 47%;*/
+    box-shadow: 6px 6px 25px;
+    padding: 15px;
+    margin: 15px;
+    background-color: #fff;
+    height: 350px;
+}
+
 .btn.active.focus,
 .btn.active:focus,
 .btn.focus,
@@ -161,7 +229,7 @@ ul li {
     padding: 10px 12px;
     font-size: 16px;
     line-height: 1.6;
-    border : 1px solid black;
+    border: 1px solid black;
 }
 
 .form-control:focus {
@@ -243,7 +311,7 @@ ul li {
 
 .btn-white {
     color: #fff;
-    background-color: #0769AF;
+    background-color: #8DC06F;
     border-radius: 5px;
     font-weight: bold;
 }
@@ -251,7 +319,7 @@ ul li {
 .btn-white:hover,
 .btn-white:focus {
     color: #fff;
-    background-color: #0769AF;
+    background-color: #447E22;
 }
 
 .btn-black {
@@ -263,6 +331,21 @@ ul li {
 .btn-black:focus {
     color: #fff;
     background-color: #000;
+}
+
+.plus {
+    color: #fff;
+    background-color: #8DC06F;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 0;
+    padding: 6px 28px;
+    transition: 0.3s;
+}
+
+.plus:hover {
+    color: #fff;
+    background-color: #447E22;
 }
 
 /* 
@@ -287,7 +370,7 @@ ul li {
 }
 
 .bg-image-1 {
-    background: url(../images/backgrounds/monceau.jpg) no-repeat center center/cover;
+    background: url(../images/backgrounds/parcmonceau.jpg) fixed no-repeat center center/cover;
 }
 
 .bg-image-1::before {
@@ -295,7 +378,7 @@ ul li {
 }
 
 .bg-image-2 {
-    background: url(../images/backgrounds/bg-2.jpg) no-repeat center bottom/cover;
+    background: url(../images/backgrounds/parcmonceau2.jpg) fixed no-repeat center bottom/cover;
 }
 
 .bg-image-2::before {
@@ -304,24 +387,24 @@ ul li {
 
 @media (min-width: 768px) {
     .section {
-        padding: 100px 0;
+        padding: 50px 0;
     }
 
     .section-titre {
         font-size: 36px;
-    color: #0769AF;
-    text-align: center;
-    font-weight: 500;
-    margin-bottom: 70px;
+        color: #0769AF;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 70px;
     }
     .section-titre:after {
-    content: "";
-    position: absolute;
-    width: 7.5%;
-    left: 46.5%;
-    height: 45px;
-    border-bottom: 1px solid #0769AF;
-}
+        content: "";
+        position: absolute;
+        width: 7.5%;
+        left: 46.5%;
+        height: 45px;
+        border-bottom: 1px solid #0769AF;
+    }
 }
 
 /* 
@@ -362,8 +445,9 @@ ul li {
 
 .navbar-toggle {
     border: 0;
-    border-radius: 0;
-    margin-top: 2px;
+    border-radius: 5px;
+    margin-top: 12px;
+    background-color: #8DC06F;
 }
 
 .navbar-toggle .icon-bar {
@@ -373,9 +457,9 @@ ul li {
 .navbar-solid {
     background-color: #fff !important;
     padding: 0 !important;
-    box-shadow: 5px 5px 5px #999; 
-     -moz-box-shadow: 5px 5px 5px #999;
-     -webkit-box-shadow: 5px 5px 5px #999;
+    box-shadow: 5px 5px 5px #999;
+    -moz-box-shadow: 5px 5px 5px #999;
+    -webkit-box-shadow: 5px 5px 5px #999;
     -webkit-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
 }
@@ -384,10 +468,10 @@ ul li {
     color: #000 !important;
     border-bottom: 1px solid transparent !important;
 }
+
 .navbar-solid li a:focus,
-.navbar-solid li a:hover
-{
-      background-color: transparent;
+.navbar-solid li a:hover {
+    background-color: transparent;
     border-color: rgba(0, 0, 0, 0.5) !important;
 }
 
@@ -405,9 +489,10 @@ ul li {
     letter-spacing: 3px;
     text-transform: uppercase;
 }
+
 .logofestival {
     width: 150px;
-    display: none;
+    /*display: none;*/
 }
 
 .site-branding .logo:focus,
@@ -501,6 +586,10 @@ ul li {
  * 6.2 Section: Facts
  */
 
+#facts {
+    height: 300px;
+}
+
 .facts i {
     color: #fff;
     font-size: 3em;
@@ -518,7 +607,7 @@ ul li {
 
 .galerie-titre {
     font-size: 36px;
-    color: #0769AF;
+    color: #385177;
     text-align: center;
     font-weight: 500;
     margin-bottom: 70px;
@@ -530,15 +619,15 @@ ul li {
     width: 7.5%;
     left: 46.5%;
     height: 45px;
-    border-bottom: 1px solid #0769AF;
+    border-bottom: 1px solid #385177;
 }
 
 .filter-button {
     font-size: 18px;
-    border: 1px solid #0769AF;
+    border: 1px solid #385177;
     border-radius: 5px;
     text-align: center;
-    color: #0769AF;
+    color: #385177;
     margin-bottom: 30px;
     -webkit-transform: scale(1) !important;
     -ms-transform: scale(1) !important;
@@ -548,19 +637,22 @@ ul li {
 
 .filter-button:hover {
     font-size: 18px;
-    border: 1px solid #0769AF;
+    border: 1px solid #385177;
     border-radius: 5px;
     text-align: center;
     color: #ffffff;
-    background-color: #0769AF;
+    background-color: #385177;
 
 }
 
-.btn-default:active, .filter-button:active {
+.btn-default:active,
+.filter-button:active {
     background-color: #0769AF !important;
     color: white !important;
 }
-.btn-default:focus, .filter-button:focus {
+
+.btn-default:focus,
+.filter-button:focus {
     background-color: #0769AF !important;
     color: white !important;
 }
@@ -571,6 +663,10 @@ ul li {
 
 .gallery_product {
     margin-bottom: 30px;
+}
+
+#actualites {
+    margin: 50px auto;
 }
 
 
@@ -606,6 +702,10 @@ ul li {
 
 .partenaires .partenaires-box-4 {
     background: url(../images/partenaires/gaumont.png) no-repeat center center/contain;
+}
+
+.choixfilms {
+    color: #000;
 }
 
 
@@ -683,7 +783,7 @@ ul li {
 }
 
 .site-footer .social-block li a {
-    color: #fff;
+    color: #8dc06f;
 }
 
 .site-footer .social-block li a:hover,

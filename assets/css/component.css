@@ -176,11 +176,19 @@
 }
 
 .morph-button-modal-2 > button,
-.morph-button-modal-2 .morph-content,
+/*.morph-button-modal-2 .morph-content,*/
 .morph-button-modal-3 > button,
 .morph-button-modal-3 .morph-content {
-	background-color: #fef0e3;
+	background-color: #8DC06F;
 	color: #000;
+    transition : 0.3s;
+}
+.morph-button-modal-2 .morph-content {
+    background-color: #dcd27f;
+}
+
+.morph-button-modal-2 > button:hover {
+    background-color: #649E42;
 }
 
 .morph-button-modal-4 {
@@ -225,6 +233,7 @@
 	width: 540px;
 	height: 520px;
 }
+
 
 .morph-button-modal-3.open .morph-content {
 	margin: -255px 0 0 -210px;
@@ -431,15 +440,18 @@
 
 @media screen and (max-width: 600px) {
 	.morph-button-modal.open .morph-content {
-		top: 0% !important;
-		left: 0% !important;
-		margin: 0;
-		width: 100%;
-		height: 100%;
+		top: 10% !important;
+		left: 10% !important;
+		margin: 20px auto;
+		width: 80%;
+		height: 80%;
 		overflow-y: scroll;
 		-webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
 		transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
 	}
+    .choixfilms {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 400px) {

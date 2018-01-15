@@ -204,7 +204,7 @@
 .content-style-form label {
 	display: block;
 	padding: 10px 0 0;
-	color: #d5bba4;
+	color: #5A6F91;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: bold;
@@ -214,17 +214,17 @@
 .content-style-form input[type="password"] {
 	padding: 5px;
 	width: 100%;
-	border: 2px solid #ebd3bd;
+	border: 2px solid #5A6F91;
 	background: transparent;
-	color: #b09a86;
+	color: #5A6F91;
 	font-weight: 300;
 	font-size: 1em;
 }
 
 .content-style-form input[type="text"]:focus,
 .content-style-form input[type="password"]:focus {
-	border-color: #e75854;
-	color: #e75854;
+	border-color: #447E22;
+	color: #447E22;
 }
 
 .content-style-form input:focus {
@@ -237,7 +237,7 @@
 	padding: 0.5em;
 	width: 100%;
 	border: none;
-	background: #e75854;
+	background: #5A6F91;
 	color: #f9f6e5;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -287,6 +287,7 @@
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
+    color: #5A6F91;
 }
 
 .js .content-style-form-2 h2,
