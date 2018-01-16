@@ -209,6 +209,12 @@
 	letter-spacing: 1px;
 	font-weight: bold;
 }
+@media(max-width: 767px) {
+    .content-style-form label {
+        font-size: 0.8em;
+        margin-bottom: 0px;
+    }
+}
 
 .content-style-form input[type="text"],
 .content-style-form input[type="password"] {

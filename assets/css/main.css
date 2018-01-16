@@ -40,6 +40,11 @@ h5,
 h6 {
     font-weight: 700;
 }
+@media(max-width: 400px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1.2em !important;
+    }
+}
 
 p {
     margin: 0 0 30px;
@@ -125,6 +130,7 @@ ul li {
     color: #fff;
     font-weight: bold;
     text-align: center;
+    padding: 3px;
 }
 
 @media(max-width: 1200px) {
@@ -136,6 +142,13 @@ ul li {
 @media(max-width: 991px) {
     .titre-film {
         width: 220px;
+    }
+}
+@media(max-width: 767px) {
+    .titre-film {
+        width: 80%;
+        font-size: 14px;
+        padding-top: 4px;
     }
 }
 
@@ -151,34 +164,40 @@ ul li {
 .debut h3 {
     margin: 20px auto 50px auto!important;
 }
+@media(max-width: 400px) {
+    .debut h3 {
+    font-size: 20px;
+    }
+}
 @media(max-width: 991px) {
     .debut {
-    height: 500px;
+    height: auto;
     }
 }
 @media(max-width: 767px) {
     .debut {
-    height: 350px;
+    height: auto;
     }
 }
 @media(max-width: 540px) {
     .debut {
-    height: 380px;
+    height: auto;
     }
 }
 @media(max-width: 460px) {
     .debut {
-    height: 420px;
+    height: auto;
     }
 }
 @media(max-width: 400px) {
     .debut {
-    height: 460px;
+    height: auto;
+        margin: 20px auto;
     }
 }
 @media(max-width: 365px) {
     .debut {
-    height: 560px;
+    height: auto;
     }
 }
 
@@ -253,6 +272,11 @@ ul li {
 .section {
     padding: 70px 0;
 }
+@media(max-width: 767px) {
+            .section {
+                padding: 20px 0;
+            }
+        }
 
 .section-title {
     color: #313131;
@@ -420,7 +444,7 @@ ul li {
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #000;
+    background-color: #fff;
     -webkit-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
 }
@@ -593,6 +617,11 @@ ul li {
 #facts {
     height: 300px;
 }
+@media(max-width: 600px) {
+#facts {
+    height: 200px;
+    }
+}
 
 .facts i {
     color: #fff;
@@ -632,7 +661,7 @@ ul li {
     border-radius: 5px;
     text-align: center;
     color: #385177;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     -webkit-transform: scale(1) !important;
     -ms-transform: scale(1) !important;
     transform: scale(1) !important;

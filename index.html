@@ -30,6 +30,7 @@
 	right:40px;
 	display:none;
 	background: url('arrow_up.png') no-repeat 0px 20px;
+        z-index: 99999;
 }
 .scrollToTop:hover{
 	text-decoration:none;
@@ -52,6 +53,18 @@
             margin: -10px auto 0 auto !important;
             display: block !important;
         }
+        @media(max-width: 767px) {
+            .button2 {
+                height: 50% !important;
+                line-height: 1px !important;
+            }
+        }
+        @media(min-width: 768px) {
+            .navbar-nav > li > a {
+    padding-top: 22px;
+    padding-bottom: 15px;
+        }
+    
     </style>
 </head>
 
@@ -185,7 +198,7 @@
                     <button class="btn btn-default filter-button" data-filter="mercredi">Mercredi 8</button>
                 </div>
                 <br/>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dimanche"> <img src="assets/images/films/intothewild.jpg" class="img-responsive affiche">
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dimanche"> <img src="assets/images/films/intothewild.jpg" class="img-responsive affiche">
                     <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Dimanche 5 août 18:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
@@ -193,7 +206,8 @@
                         <div class="morph-content">
                             <div>
                                 <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
-                                    <h2>About Parsley</h2>
+                                    <h2>Bande-annonce</h2>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zupSm0fnG1Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                     <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
                                     <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
                                     <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
@@ -206,7 +220,7 @@
                     </div>
                     <!-- morph-button -->
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dimanche"> <img src="assets/images/films/cercle.jpg" class="img-responsive  affiche">
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dimanche"> <img src="assets/images/films/cercle.jpg" class="img-responsive  affiche">
                     <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Dimanche 5 août 20:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
@@ -222,7 +236,7 @@
                     </div>
                     <!-- morph-button -->
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dimanche"> <img src="assets/images/films/2001.jpg" class="img-responsive  affiche">
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dimanche"> <img src="assets/images/films/2001.jpg" class="img-responsive  affiche">
                     <!--<div class="button-icon" type="button"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Dimanche 5 août 22:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
@@ -238,7 +252,7 @@
                     </div>
                     <!-- morph-button -->
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter lundi"> <img src="assets/images/films/bon.jpg" class="img-responsive  affiche">
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter lundi"> <img src="assets/images/films/bon.jpg" class="img-responsive  affiche">
                     <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Lundi 6 août 18:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
@@ -254,7 +268,7 @@
                     </div>
                     <!-- morph-button -->
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter lundi"> <img src="assets/images/films/bigfish.jpg" class="img-responsive  affiche">
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter lundi"> <img src="assets/images/films/bigfish.jpg" class="img-responsive  affiche">
                     <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Lundi 6 août 20:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
@@ -270,7 +284,7 @@
                     </div>
                     <!-- morph-button -->
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter lundi"> <img src="assets/images/films/volcoucou.jpg" class="img-responsive  affiche">
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter lundi"> <img src="assets/images/films/volcoucou.jpg" class="img-responsive  affiche">
                     <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Lundi 6 août 22:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
@@ -286,7 +300,7 @@
                     </div>
                     <!-- morph-button -->
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mardi"> <img src="assets/images/films/willhunting.jpg" class="img-responsive  affiche">
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter mardi"> <img src="assets/images/films/willhunting.jpg" class="img-responsive  affiche">
                     <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Mardi 7 août 18:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
@@ -302,7 +316,7 @@
                     </div>
                     <!-- morph-button -->
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mardi"> <img src="assets/images/films/american.jpg" class="img-responsive  affiche">
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter mardi"> <img src="assets/images/films/american.jpg" class="img-responsive  affiche">
                     <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Mardi 7 août 20:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
@@ -318,7 +332,7 @@
                     </div>
                     <!-- morph-button -->
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mardi"> <img src="assets/images/films/imitation.jpg" class="img-responsive  affiche">
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter mardi"> <img src="assets/images/films/imitation.jpg" class="img-responsive  affiche">
                     <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Mardi 7 août 22:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
@@ -334,7 +348,7 @@
                     </div>
                     <!-- morph-button -->
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mercredi"> <img src="assets/images/films/bienvenue.jpg" class="img-responsive  affiche">
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter mercredi"> <img src="assets/images/films/bienvenue.jpg" class="img-responsive  affiche">
                     <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Mercredi 8 août 18:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
@@ -350,7 +364,7 @@
                     </div>
                     <!-- morph-button -->
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mercredi"> <img src="assets/images/films/brother.jpg" class="img-responsive  affiche">
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter mercredi"> <img src="assets/images/films/brother.jpg" class="img-responsive  affiche">
                     <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Mercredi 8 août 20:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
@@ -366,7 +380,7 @@
                     </div>
                     <!-- morph-button -->
                 </div>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mercredi"> <img src="assets/images/films/forrest.jpg" class="img-responsive  affiche">
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter mercredi"> <img src="assets/images/films/forrest.jpg" class="img-responsive  affiche">
                     <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Mercredi 8 août 22:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
@@ -395,7 +409,7 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <div class="articles">
-                        <h4 class="text-center galerie-titre">Article</h4>
+                        <h4 class="text-center galerie-titre">La météo à Paris</h4>
                         <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus cursus auctor. Suspendisse eu condimentum augue. Donec ut consequat diam. Suspendisse id viverra dolor. Fusce at felis mollis, luctus urna a, rutrum diam. Proin rhoncus et velit vel lobortis. Aliquam erat volutpat. </p>
                         <!--<div class="morph-button morph-button-modal morph-button-modal-3 morph-button-fixed">
                             <button type="button" class="plus pull-right">Lire l'article</button>
@@ -409,16 +423,16 @@
                             </div>
                         </div>-->
                         <div id="corps">
-                            <h1>La météo à Paris</h1>
+                            
                         <div id="meteo"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="articles">
-                        <h4 class="text-center galerie-titre">Article</h4>
+                        <h4 class="text-center galerie-titre">Quelques liens utiles</h4>
                         <div id="corps">
-                            <h1>Quelques liens utiles</h1>
+                            
                             <ul>
                             <li><a href="#" target="_blank">Mairie de Paris</a></li>
                             <li><a href="#" target="_blank">RATP</a></li>
@@ -483,16 +497,16 @@
                     <h3 class="section-title text-center galerie-titre">Nos partenaires</h3> </div>
             </div>
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-md-3 col-sm-6">
                     <a href="https://www.paris.fr/" target="_blank" class="partenaires-box partenaires-box-1"></a>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-md-3  col-sm-6">
                     <a href="http://www.velib.paris/" target="_blank" class="partenaires-box partenaires-box-2"></a>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-md-3  col-sm-6">
                     <a href="http://openclassrooms.com/" target="_blank" class="partenaires-box partenaires-box-3"></a>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-md-3  col-sm-6">
                     <a href="https://www.cinemasgaumontpathe.com/" target="_blank" class="partenaires-box partenaires-box-4"></a>
                 </div>
             </div>
