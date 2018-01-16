@@ -10,7 +10,7 @@
 	position: relative;
 	padding: 0 1em;
 	border: none;
-	background-color: #e85657;
+	background-color:#8DC06F;
 	color: #f9f6e5;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -103,12 +103,15 @@
 
 /* Morph Button Style: Overlay */
 .morph-button.morph-button-overlay {
-	margin: 50px auto;
+	margin: 20px auto;
+    width: auto;
+    
 }
+
 
 .morph-button-overlay .morph-content {
 	overflow: hidden;
-	background: #e85657;
+	background: #8DC06F;
 }
 
 .morph-button-overlay.open .morph-content {
@@ -182,6 +185,29 @@
 	background-color: #8DC06F;
 	color: #000;
     transition : 0.3s;
+    
+}
+button {
+    border-radius: 15px;
+    box-shadow: 6px 6px 20px 4px rgba(0,0,0, 0.2);;
+}
+button:hover {
+    transform : scale(1.03);
+  box-shadow : 6px 6px 25px 18px rgba(0,0,0, 0.2);
+}
+button:active {
+    transform : scale(0.98);
+  box-shadow : 6px 6px 18px 2px rgba(0,0,0, 0.23);
+}
+
+.articles .morph-button-modal-3 > button,
+.articles .morph-button-modal-3 .morph-content {
+	background-color: #8DC06F;
+	color: #fff;
+    transition : 0.3s;
+}
+.btn {
+    box-shadow: none;
 }
 .morph-button-modal-2 .morph-content {
     background-color: #649E42;
@@ -189,6 +215,16 @@
 
 .morph-button-modal-2 > button:hover {
     background-color: #649E42;
+}
+.morph-button-modal-2 > button:active {
+    background-color: #649E42;
+    transform: translateY(4px);
+    box-shadow: 0 5px #666;
+}
+.morph-button-modal-3 > button:active {
+    background-color: #649E42;
+    transform: translateY(4px);
+    box-shadow: 0 5px #666;
 }
 
 .morph-button-modal-4 {

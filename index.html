@@ -5,83 +5,104 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Festival de films de plein air</title>
-
     <!-- css -->
     <link rel="stylesheet" href="frameworks/bootstrap/dist/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <!--<link rel="stylesheet" href="assets/css/demo.css">-->
     <link rel="stylesheet" href="assets/css/component.css">
     <link rel="stylesheet" href="assets/css/content.css">
-
-
     <script src="assets/js/modernizr.custom.js"></script>
+    <style>
+    .scrollToTop{
+	width:60px; 
+	height:60px;
+	padding:16px; 
+	text-align:center; 
+	background: #8EC06F !important;
+    color: #fff !important;
+	font-weight: bold;
+	text-decoration: none;
+	position:fixed;
+	bottom:20px;
+	right:40px;
+	display:none;
+	background: url('arrow_up.png') no-repeat 0px 20px;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+}
+        #corps {
+  /*border : solid green 5px;*/
+  border-radius : 10px;
+    width : 80%;
+  display : block;
+  margin : 50px auto;
+  background-color : #fff;
+}
+        ul li {
+            list-style : none;
+            line-height: 1.2;
+        }
+        .button2 {
+            width: 50% !important;
+            padding: 0px !important;
+            margin: -10px auto 0 auto !important;
+            display: block !important;
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target="#site-nav">
     <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
         <div class="container">
             <div class="navbar-header">
-
                 <!-- logo -->
                 <div class="site-branding">
                     <a class="logo" href="index.html">
-
-                        <!-- logo image  -->
-                        <img class="logofestival" src="assets/images/Festival/0.5x/Plan de travail 1 copie 4@0.5x.png" alt="Logo">
-                    </a>
+                        <!-- logo image  --><img class="logofestival" src="assets/images/Festival/0.5x/Plan de travail 1 copie 4@0.5x.png" alt="Logo"> </a>
                 </div>
-
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
             </div>
             <!-- /.navbar-header -->
-
             <div class="collapse navbar-collapse" id="navbar-items">
                 <ul class="nav navbar-nav navbar-right">
-
                     <!-- navigation menu -->
                     <li class="active"><a data-scroll href="#festival">Le festival</a></li>
                     <li><a data-scroll href="#films">Les films</a></li>
                     <li><a data-scroll href="#actualites">Actualités</a></li>
-
                     <li><a data-scroll href="#contact">Contact</a></li>
-
                 </ul>
             </div>
         </div>
         <!-- /.container -->
     </nav>
-
     <header id="site-header" class="site-header valign-center">
         <div class="intro">
-
             <h2>Du 5 au 8 Août 2018 / Parc Monceau</h2>
-
             <h1>Festival des films de plein air</h1>
-
             <p>Entrée gratuite</p>
             <div class="morph-button morph-button-modal morph-button-modal-2 morph-button-fixed">
                 <button type="button">Pré-inscription</button>
                 <div class="morph-content">
                     <div>
-                        <div class="content-style-form content-style-form-1">
-                            <span class="icon icon-close"></span>
+                        <div class="content-style-form content-style-form-1"> <span class="icon icon-close"></span>
                             <h2>Pré-inscription</h2>
-
                             <form méthod="post" action="#">
-                                <p><label>Nom</label><input type="text" /></p>
-                                <p><label>Prénom</label><input type="text" /></p>
-                                <p><label>Email</label><input type="text" /></p>
+                                <p>
+                                    <label>Nom</label>
+                                    <input type="text" />
+                                </p>
+                                <p>
+                                    <label>Prénom</label>
+                                    <input type="text" />
+                                </p>
+                                <p>
+                                    <label>Email</label>
+                                    <input type="text" />
+                                </p>
                                 <select name="menu_destination" class="choixfilms">
                                     <option value="#">Dimanche 05 août à 18h00 : Into the wild</option>
                                     <option value="#">Dimanche 05 août à 20h00 : Le cercle des poètes disparus</option>
@@ -89,50 +110,43 @@
                                     <option value="#">Lundi 06 août à 18h00 : Le bon, la brute et le truand</option>
                                     <option value="#">Lundi 06 août à 20h00 : Big Fish</option>
                                     <option value="#">Lundi 06 août à 22h00 : Vol au-dessus d'un nid de coucou</option>
-                                     <option value="#">Mardi 07 août à 18h00 : Will Hunting</option>
+                                    <option value="#">Mardi 07 août à 18h00 : Will Hunting</option>
                                     <option value="#">Mardi 07 août à 20h00 : American Beauty</option>
                                     <option value="#">Mardi 07 août à 22h00 : The Imitation Game</option>
-                                     <option value="#">Mercredi 08 août à 18h00 : Bienvenue à Gattaca</option>
+                                    <option value="#">Mercredi 08 août à 18h00 : Bienvenue à Gattaca</option>
                                     <option value="#">Mercredi 08 août à 20h00 : O Brother</option>
                                     <option value="#">Mercredi 08 août à 22h00 : Forrest Gump</option>
                                 </select>
-                                <p><button>Envoyer</button></p>
+                                <p>
+                                    <button>Envoyer</button>
+                                </p>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--<a class="btn btn-white" data-scroll href="#registration">Pré-inscription</a>-->
-
-        </div>
+            <!--<a class="btn btn-white" data-scroll href="#registration">Pré-inscription</a>--></div>
     </header>
-
     <section id="festival" class="section about">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-6 col-sm-12">
                     <div class="debut">
                         <h3 class="section-title galerie-titre">Présentation</h3>
-
-                        <p>C'est avec une immense joie que notre association "Les Films de Plein Air" vient d'être créée. Notre objectif ? Vous faire découvrir ou redécouvrir des films d'auteur, seul, en famille ou entre amis.<br> Notre premier projet est un festival où nous espérons vous voir très nombreux !<br> Si vous souhaitez plus d'informations, n'hésitez surtout pas à nous contacter, nous nous ferons un plaisir de vous répondre dans les meilleurs délais.
-                        </p>
-
-                        <figure>
-                            <img alt="" class="img-responsive" src="assets/images/about-us.jpg">
-                        </figure>
+                        <p>C'est avec une immense joie que notre association "Les Films de Plein Air" vient d'être créée. Notre objectif ? Vous faire découvrir ou redécouvrir des films d'auteur, seul, en famille ou entre amis.
+                            <br> Notre premier projet est un festival où nous espérons vous voir très nombreux !
+                            <br> Si vous souhaitez plus d'informations, n'hésitez surtout pas à nous contacter, nous nous ferons un plaisir de vous répondre dans les meilleurs délais. </p>
+                        <figure> <img alt="" class="img-responsive" src="assets/images/about-us.jpg"> </figure>
                     </div>
                 </div>
                 <!-- /.col-sm-6 -->
-
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-6 col-sm-12">
                     <div class="debut">
                         <h3 class="section-title multiple-title galerie-titre">Le festival</h3>
-
                         <p>Le festival des Films de Plein Air se déroulera du 5 au 8 août 2018 au Parc Monceau à Paris : c'est l'occasion pour vous de découvrir ce superbe parc avant d'être devant le (très) grand écran et de profiter d'une bonne soirée dans un cadre plus que convivial ( des transats seront en location).
-                            <br>N'hésitez pas à vous pré-inscrire à nos séances, ce qui nous permettra d'organiser ce festival à la perfection ! <br> La participation à ce festival est GRATUITE !
-                        </p>
+                            <br>N'hésitez pas à vous pré-inscrire à nos séances, ce qui nous permettra d'organiser ce festival à la perfection !
+                            <br> La participation à ce festival est GRATUITE ! </p>
                     </div>
-
                 </div>
                 <!-- /.col-sm-6 -->
             </div>
@@ -140,7 +154,6 @@
         </div>
         <!-- /.container -->
     </section>
-
     <!--<section class="section bg-image-1 facts text-center">
 
     </section>-->
@@ -155,20 +168,15 @@
                 </div>-->
                 <div class="col-sm-12">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10495.532706460806!2d2.299344643593271!3d48.8795035575588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc+Monceau!5e0!3m2!1sfr!2sfr!4v1514225756510" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
                 </div>
             </div>
         </div>
     </section>
-
-
     <section id="films" class="section location">
         <div class="container">
             <div class="row">
                 <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h1 class="galerie-titre">Les films</h1>
-                </div>
-
+                    <h1 class="galerie-titre">Les films</h1> </div>
                 <div align="center">
                     <button class="btn btn-default filter-button" data-filter="all">Tous les jours</button>
                     <button class="btn btn-default filter-button" data-filter="dimanche">Dimanche 5</button>
@@ -177,137 +185,270 @@
                     <button class="btn btn-default filter-button" data-filter="mercredi">Mercredi 8</button>
                 </div>
                 <br/>
-
-
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dimanche">
-                    <img src="assets/images/films/intothewild.jpg" class="img-responsive affiche">
-                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dimanche"> <img src="assets/images/films/intothewild.jpg" class="img-responsive affiche">
+                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Dimanche 5 août 18:00</div>
+                    <div class="morph-button morph-button-overlay morph-button-fixed">
+                        <button type="button" class="button2">Voir plus</button>
+                        <div class="morph-content">
+                            <div>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
+                                    <h2>About Parsley</h2>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                    <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                    <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                    <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- morph-button -->
                 </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dimanche">
-                    <img src="assets/images/films/cercle.jpg" class="img-responsive  affiche">
-                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dimanche"> <img src="assets/images/films/cercle.jpg" class="img-responsive  affiche">
+                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Dimanche 5 août 20:00</div>
+                    <div class="morph-button morph-button-overlay morph-button-fixed">
+                        <button type="button" class="button2">Voir plus</button>
+                        <div class="morph-content">
+                            <div>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
+                                    <h2>About Parsley</h2>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- morph-button -->
                 </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dimanche">
-                    <img src="assets/images/films/2001.jpg" class="img-responsive  affiche">
-
-                    <div class="button-icon" type="button"><span class="icon icon-zoom-in"></span></div>
-
-
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter dimanche"> <img src="assets/images/films/2001.jpg" class="img-responsive  affiche">
+                    <!--<div class="button-icon" type="button"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Dimanche 5 août 22:00</div>
+                    <div class="morph-button morph-button-overlay morph-button-fixed">
+                        <button type="button" class="button2">Voir plus</button>
+                        <div class="morph-content">
+                            <div>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
+                                    <h2>About Parsley</h2>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- morph-button -->
                 </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter lundi">
-                    <img src="assets/images/films/bon.jpg" class="img-responsive  affiche">
-                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter lundi"> <img src="assets/images/films/bon.jpg" class="img-responsive  affiche">
+                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Lundi 6 août 18:00</div>
+                    <div class="morph-button morph-button-overlay morph-button-fixed">
+                        <button type="button" class="button2">Voir plus</button>
+                        <div class="morph-content">
+                            <div>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
+                                    <h2>About Parsley</h2>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- morph-button -->
                 </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter lundi">
-                    <img src="assets/images/films/bigfish.jpg" class="img-responsive  affiche">
-                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter lundi"> <img src="assets/images/films/bigfish.jpg" class="img-responsive  affiche">
+                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Lundi 6 août 20:00</div>
+                    <div class="morph-button morph-button-overlay morph-button-fixed">
+                        <button type="button" class="button2">Voir plus</button>
+                        <div class="morph-content">
+                            <div>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
+                                    <h2>About Parsley</h2>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- morph-button -->
                 </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter lundi">
-                    <img src="assets/images/films/volcoucou.jpg" class="img-responsive  affiche">
-                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter lundi"> <img src="assets/images/films/volcoucou.jpg" class="img-responsive  affiche">
+                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Lundi 6 août 22:00</div>
+                    <div class="morph-button morph-button-overlay morph-button-fixed">
+                        <button type="button" class="button2">Voir plus</button>
+                        <div class="morph-content">
+                            <div>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
+                                    <h2>About Parsley</h2>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- morph-button -->
                 </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mardi">
-                    <img src="assets/images/films/willhunting.jpg" class="img-responsive  affiche">
-                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mardi"> <img src="assets/images/films/willhunting.jpg" class="img-responsive  affiche">
+                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Mardi 7 août 18:00</div>
+                    <div class="morph-button morph-button-overlay morph-button-fixed">
+                        <button type="button" class="button2">Voir plus</button>
+                        <div class="morph-content">
+                            <div>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
+                                    <h2>About Parsley</h2>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- morph-button -->
                 </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mardi">
-                    <img src="assets/images/films/american.jpg" class="img-responsive  affiche">
-                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mardi"> <img src="assets/images/films/american.jpg" class="img-responsive  affiche">
+                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Mardi 7 août 20:00</div>
+                    <div class="morph-button morph-button-overlay morph-button-fixed">
+                        <button type="button" class="button2">Voir plus</button>
+                        <div class="morph-content">
+                            <div>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
+                                    <h2>About Parsley</h2>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- morph-button -->
                 </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mardi">
-                    <img src="assets/images/films/imitation.jpg" class="img-responsive  affiche">
-                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mardi"> <img src="assets/images/films/imitation.jpg" class="img-responsive  affiche">
+                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Mardi 7 août 22:00</div>
+                    <div class="morph-button morph-button-overlay morph-button-fixed">
+                        <button type="button" class="button2">Voir plus</button>
+                        <div class="morph-content">
+                            <div>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
+                                    <h2>About Parsley</h2>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- morph-button -->
                 </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mercredi">
-                    <img src="assets/images/films/bienvenue.jpg" class="img-responsive  affiche">
-                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mercredi"> <img src="assets/images/films/bienvenue.jpg" class="img-responsive  affiche">
+                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Mercredi 8 août 18:00</div>
+                    <div class="morph-button morph-button-overlay morph-button-fixed">
+                        <button type="button" class="button2">Voir plus</button>
+                        <div class="morph-content">
+                            <div>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
+                                    <h2>About Parsley</h2>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- morph-button -->
                 </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mercredi">
-                    <img src="assets/images/films/brother.jpg" class="img-responsive  affiche">
-                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mercredi"> <img src="assets/images/films/brother.jpg" class="img-responsive  affiche">
+                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Mercredi 8 août 20:00</div>
+                    <div class="morph-button morph-button-overlay morph-button-fixed">
+                        <button type="button" class="button2">Voir plus</button>
+                        <div class="morph-content">
+                            <div>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
+                                    <h2>About Parsley</h2>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- morph-button -->
                 </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mercredi">
-                    <img src="assets/images/films/forrest.jpg" class="img-responsive  affiche">
-                    <div class="button-icon"><span class="icon icon-zoom-in"></span></div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter mercredi"> <img src="assets/images/films/forrest.jpg" class="img-responsive  affiche">
+                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Mercredi 8 août 22:00</div>
+                    <div class="morph-button morph-button-overlay morph-button-fixed">
+                        <button type="button" class="button2">Voir plus</button>
+                        <div class="morph-content">
+                            <div>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
+                                    <h2>About Parsley</h2>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- morph-button -->
                 </div>
             </div>
         </div>
     </section>
-    <section id="facts" class="section bg-image-1 facts text-center">
-
-
-    </section>
-
+    <section id="facts" class="section bg-image-1 facts text-center"> </section>
     <section id="actualites" class="">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-titre galerie-titre">Actualités</h3>
-                </div>
+                    <h3 class="section-titre galerie-titre">Actualités</h3> </div>
             </div>
-
             <div class="row">
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-6 col-sm-12">
                     <div class="articles">
                         <h4 class="text-center galerie-titre">Article</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus cursus auctor. Suspendisse eu condimentum augue. Donec ut consequat diam. Suspendisse id viverra dolor. Fusce at felis mollis, luctus urna a, rutrum diam. Proin rhoncus et velit vel lobortis. Aliquam erat volutpat. </p>
-                        <button type="button" class="plus pull-right">Lire l'article</button>
-
+                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus cursus auctor. Suspendisse eu condimentum augue. Donec ut consequat diam. Suspendisse id viverra dolor. Fusce at felis mollis, luctus urna a, rutrum diam. Proin rhoncus et velit vel lobortis. Aliquam erat volutpat. </p>
+                        <!--<div class="morph-button morph-button-modal morph-button-modal-3 morph-button-fixed">
+                            <button type="button" class="plus pull-right">Lire l'article</button>
+                            <div class="morph-content">
+                                <div>
+                                    <div class="content-style-form content-style-form-1"> <span class="icon icon-close"></span>
+                                        <h2>Article</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus cursus auctor. Suspendisse eu condimentum augue. Donec ut consequat diam. Suspendisse id viverra dolor. Fusce at felis mollis, luctus urna a, rutrum diam. Proin rhoncus et velit vel lobortis. Aliquam erat volutpat. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                        <div id="corps">
+                            <h1>La météo à Paris</h1>
+                        <div id="meteo"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-6 col-sm-12">
                     <div class="articles">
                         <h4 class="text-center galerie-titre">Article</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus cursus auctor. Suspendisse eu condimentum augue. Donec ut consequat diam. Suspendisse id viverra dolor. Fusce at felis mollis, luctus urna a, rutrum diam. Proin rhoncus et velit vel lobortis. Aliquam erat volutpat. </p>
-                        <button type="button" class="plus lire pull-right">Lire l'article</button>
-
+                        <div id="corps">
+                            <h1>Quelques liens utiles</h1>
+                            <ul>
+                            <li><a href="#" target="_blank">Mairie de Paris</a></li>
+                            <li><a href="#" target="_blank">RATP</a></li>
+                                <li><a href="#" target="_blank">Velib</a></li>
+                                </ul>
+                        </div>
+                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus cursus auctor. Suspendisse eu condimentum augue. Donec ut consequat diam. Suspendisse id viverra dolor. Fusce at felis mollis, luctus urna a, rutrum diam. Proin rhoncus et velit vel lobortis. Aliquam erat volutpat. </p>
+                       <!--<div class="morph-button morph-button-modal morph-button-modal-3 morph-button-fixed">
+                            <button type="button" class="plus lire pull-right">Lire l'article</button>
+                            <div class="morph-content">
+                                <div>
+                                    <div class="content-style-form content-style-form-1"> <span class="icon icon-close"></span>
+                                        <h2>Article</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus cursus auctor. Suspendisse eu condimentum augue. Donec ut consequat diam. Suspendisse id viverra dolor. Fusce at felis mollis, luctus urna a, rutrum diam. Proin rhoncus et velit vel lobortis. Aliquam erat volutpat. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
-
-
-
         </div>
-
     </section>
-
-    <section id="facts" class="section bg-image-2 facts text-center">
-
-
-    </section>
-
+    <section id="facts" class="section bg-image-2 facts text-center"> </section>
     <section id="contact" class="section registration">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-titre galerie-titre">Nous contacter</h3>
-                </div>
+                    <h3 class="section-titre galerie-titre">Nous contacter</h3> </div>
             </div>
-
             <form action="#" id="registration-form">
                 <div class="row">
                     <div class="col-md-12" id="registration-msg" style="display:none;">
@@ -315,28 +456,18 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Prénom" id="prenom" name="prenom" required>
-                        </div>
-
+                            <input type="text" class="form-control" placeholder="Prénom" id="prenom" name="prenom" required> </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nom" id="nom" name="nom" required>
-                        </div>
-
+                            <input type="text" class="form-control" placeholder="Nom" id="nom" name="nom" required> </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
-                        </div>
-
+                            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required> </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Téléphone" id="telephone" name="telephone" required>
-                        </div>
+                            <input type="text" class="form-control" placeholder="Téléphone" id="telephone" name="telephone" required> </div>
                     </div>
-
                     <div class="col-sm-6">
                         <div class="form-group">
                             <textarea placeholder="Message" class="form-control" id="message" required style="width:100%;height:240px;"></textarea>
-
                         </div>
-
                     </div>
                 </div>
                 <div class="text-center mt20">
@@ -345,15 +476,11 @@
             </form>
         </div>
     </section>
-
-
-
     <section class="section partenaires">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title text-center galerie-titre">Nos partenaires</h3>
-                </div>
+                    <h3 class="section-title text-center galerie-titre">Nos partenaires</h3> </div>
             </div>
             <div class="row">
                 <div class="col-sm-3">
@@ -369,14 +496,8 @@
                     <a href="https://www.cinemasgaumontpathe.com/" target="_blank" class="partenaires-box partenaires-box-4"></a>
                 </div>
             </div>
-
-
         </div>
     </section>
-
-
-
-
     <footer class="site-footer">
         <div class="container">
             <div class="row">
@@ -392,7 +513,9 @@
             </div>
         </div>
     </footer>
-
+    
+    <a href="#" class="scrollToTop">Top
+</a>
     <!-- script -->
     <script src="frameworks/jquery/dist/jquery.min.js"></script>
     <script src="frameworks/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -401,10 +524,9 @@
     <script src="assets/js/uiMorphingButton_fixed.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        (function() {
-            var docElem = window.document.documentElement,
-                didScroll, scrollPosition;
-
+        (function () {
+            var docElem = window.document.documentElement
+                , didScroll, scrollPosition;
             // trick to prevent scrolling when opening/closing button
             function noScrollFn() {
                 window.scrollTo(scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0);
@@ -427,7 +549,7 @@
             function scrollHandler() {
                 if (!didScroll) {
                     didScroll = true;
-                    setTimeout(function() {
+                    setTimeout(function () {
                         scrollPage();
                     }, 60);
                 }
@@ -435,76 +557,133 @@
 
             function scrollPage() {
                 scrollPosition = {
-                    x: window.pageXOffset || docElem.scrollLeft,
-                    y: window.pageYOffset || docElem.scrollTop
+                    x: window.pageXOffset || docElem.scrollLeft
+                    , y: window.pageYOffset || docElem.scrollTop
                 };
                 didScroll = false;
             };
-
             scrollFn();
-
-            [].slice.call(document.querySelectorAll('.morph-button')).forEach(function(bttn) {
+            [].slice.call(document.querySelectorAll('.morph-button')).forEach(function (bttn) {
                 new UIMorphingButton(bttn, {
-                    closeEl: '.icon-close',
-                    onBeforeOpen: function() {
+                    closeEl: '.icon-close'
+                    , onBeforeOpen: function () {
                         // don't allow to scroll
                         noScroll();
-                    },
-                    onAfterOpen: function() {
+                    }
+                    , onAfterOpen: function () {
                         // can scroll again
                         canScroll();
-                    },
-                    onBeforeClose: function() {
+                    }
+                    , onBeforeClose: function () {
                         // don't allow to scroll
                         noScroll();
-                    },
-                    onAfterClose: function() {
+                    }
+                    , onAfterClose: function () {
                         // can scroll again
                         canScroll();
                     }
                 });
             });
-
             // for demo purposes only
-            [].slice.call(document.querySelectorAll('form button')).forEach(function(bttn) {
-                bttn.addEventListener('click', function(ev) {
+            [].slice.call(document.querySelectorAll('form button')).forEach(function (bttn) {
+                bttn.addEventListener('click', function (ev) {
                     ev.preventDefault();
                 });
             });
         })();
-
     </script>
-
-
-
     <script>
-        $(document).ready(function() {
-
-            $(".filter-button").click(function() {
+        $(document).ready(function () {
+            $(".filter-button").click(function () {
                 var value = $(this).attr('data-filter');
-
                 if (value == "all") {
                     //$('.filter').removeClass('hidden');
                     $('.filter').show('1000');
-                } else {
+                }
+                else {
                     //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
                     //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
                     $(".filter").not('.' + value).hide('3000');
                     $('.filter').filter('.' + value).show('3000');
-
                 }
             });
-
             if ($(".filter-button").removeClass("active")) {
                 $(this).removeClass("active");
             }
             $(this).addClass("active");
-
         });
-
     </script>
+    
+    <script>
+        $(document).ready(function(){
+	
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
+});
+    </script>
+    <script>
+        function ajaxGet(url, callback) {
+    var req = new XMLHttpRequest();
+    req.open("GET", url);
+    req.addEventListener("load", function () {
+        if (req.status >= 200 && req.status < 400) {
+            // Appelle la fonction callback en lui passant la réponse de la requête
+            callback(req.responseText);
+        } else {
+            console.error(req.status + " " + req.statusText + " " + url);
+        }
+    });
+    req.addEventListener("error", function () {
+        console.error("Erreur réseau avec l'URL " + url);
+    });
+    req.send(null);
+}
 
+ajaxGet("https://api.wunderground.com/api/50a65432f17cf542/conditions/q/France/Paris.json", function (reponse) {
 
+    var meteo = JSON.parse(reponse);
+
+    // Récupération de certains résultats
+
+    var temperature = meteo.current_observation.temp_c;
+
+    var humidite = meteo.current_observation.relative_humidity;
+
+    var imageUrl = meteo.current_observation.icon_url;
+
+    // Affichage des résultats
+
+    var conditionsElt = document.createElement("div");
+
+    conditionsElt.textContent = "Il fait actuellement " + temperature +
+
+        "°C et l'humidité est de " + humidite;
+
+    var imageElt = document.createElement("img");
+
+    imageElt.src = imageUrl;
+
+    var meteoElt = document.getElementById("meteo");
+
+    meteoElt.appendChild(conditionsElt);
+
+    meteoElt.appendChild(imageElt);
+
+});
+    </script>
 </body>
 
 </html>

@@ -95,7 +95,7 @@
 }
 
 .icon-close:hover {
-	color: #a50a05;
+	color: #20395F;
 }
 .icon-zoom-in 
 {
@@ -134,13 +134,13 @@
 }
 
 .content-style-overlay .icon-close {
-	border: 2px solid #f9e1c9;
+	border: 2px solid #20395F;
 	border-radius: 50%;
 	line-height: 2.8;
 }
 
 .content-style-overlay .icon-close:hover {
-	border-color: #a50a05;	
+	border-color: #20395F;	
 }
 
 /* Style for text modal */
@@ -224,7 +224,7 @@
 .content-style-form input[type="text"]:focus,
 .content-style-form input[type="password"]:focus {
 	border-color: #447E22;
-	color: #447E22;
+	color: #000;
 }
 
 .content-style-form input:focus {

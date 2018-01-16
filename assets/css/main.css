@@ -118,7 +118,7 @@ ul li {
 
 .titre-film {
     position: absolute;
-    bottom: 0;
+    top: 0;
     width: 360px;
     height: 30px;
     background: #20395F;
@@ -218,9 +218,9 @@ ul li {
 }
 
 .btn:hover {
-    -webkit-transform: scale(1.1);
+    /*-webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    transform: scale(1.1);*/
 }
 
 .form-control {
@@ -637,6 +637,14 @@ ul li {
     -ms-transform: scale(1) !important;
     transform: scale(1) !important;
 
+}
+@media(max-width: 767px) {
+    .filter-button {
+        font-size: 12px;
+    }
+    .filter-button:hover {
+        font-size: 12px;
+    }
 }
 
 .filter-button:hover {
