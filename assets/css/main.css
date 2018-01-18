@@ -1,3 +1,10 @@
+/*
+ * 0. Ajout style index.html
+ */
+
+
+
+
 /* 
  * 1. Google Font
  */
@@ -151,6 +158,14 @@ ul li {
         padding-top: 4px;
     }
 }
+@media(max-width: 500px) {
+    .titre-film {
+        width: 80%;
+        font-size: 12px;
+        padding-top: 1px;
+        height: 20px;
+    }
+}
 
 .debut {
 
@@ -193,6 +208,7 @@ ul li {
     .debut {
     height: auto;
         margin: 20px auto;
+        padding : 15px;
     }
 }
 @media(max-width: 365px) {
@@ -402,7 +418,7 @@ ul li {
 }
 
 .bg-image-1::before {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .bg-image-2 {
@@ -410,7 +426,7 @@ ul li {
 }
 
 .bg-image-2::before {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 768px) {
@@ -454,7 +470,7 @@ ul li {
 }
 
 .navbar-custom .navbar-nav > li > a {
-    color: #000;
+    color: #FFF;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 400;
@@ -468,9 +484,13 @@ ul li {
 }
 
 .navbar-custom .navbar-nav > .active > a {
-    border-color: rgba(255, 255, 255, 0.5);
+   /* border-color: rgba(255, 255, 255, 0.5); */
 }
-
+@media(max-width: 767px) {
+.navbar-collapse {
+    background : #8DC06F;
+}
+}
 .navbar-toggle {
     border: 0;
     border-radius: 5px;
@@ -563,6 +583,7 @@ ul li {
     display: table-cell;
     vertical-align: middle;
     height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .site-header .intro h2 {
@@ -644,6 +665,7 @@ ul li {
     text-align: center;
     font-weight: 500;
     margin-bottom: 40px;
+    font-family: 'Carter One', cursive;
 }
 
 .galerie-titre:after {
@@ -657,10 +679,11 @@ ul li {
 
 .filter-button {
     font-size: 18px;
-    border: 1px solid #385177;
+    border: 1px solid #8DC06F;
     border-radius: 5px;
     text-align: center;
-    color: #385177;
+    color: #FFF;
+    background-color: #8DC06F !important;
     margin-bottom: 10px;
     -webkit-transform: scale(1) !important;
     -ms-transform: scale(1) !important;
@@ -672,29 +695,29 @@ ul li {
         font-size: 12px;
     }
     .filter-button:hover {
-        font-size: 12px;
+        font-size: 12px !important;
     }
 }
 
 .filter-button:hover {
     font-size: 18px;
-    border: 1px solid #385177;
+    border: 1px solid #8DC06F;
     border-radius: 5px;
     text-align: center;
     color: #ffffff;
-    background-color: #385177;
+    background-color: #8DC06F;
 
 }
 
 .btn-default:active,
 .filter-button:active {
-    background-color: #0769AF !important;
+    background-color: #8DC06F !important;
     color: white !important;
 }
 
 .btn-default:focus,
 .filter-button:focus {
-    background-color: #0769AF !important;
+    background-color: #8DC06F !important;
     color: white !important;
 }
 
@@ -704,6 +727,18 @@ ul li {
 
 .gallery_product {
     margin-bottom: 30px;
+}
+@media(max-width: 767px) {
+    .gallery_product {
+    margin-bottom: 0px;
+}
+    
+}
+@media(max-width: 500px) {
+    .gallery_product {
+    margin-bottom: -30px;
+}
+    
 }
 
 #actualites {
@@ -724,6 +759,11 @@ ul li {
     -webkit-transition: 0.5s all linear;
     transition: 0.5s all linear;
 }
+@media(max-width: 767px) {
+    .partenaires .partenaires-box {
+        margin: 0 auto;
+    }
+}
 
 .partenaires .partenaires-box:hover {
     opacity: 1;
@@ -743,6 +783,15 @@ ul li {
 
 .partenaires .partenaires-box-4 {
     background: url(../images/partenaires/gaumont.png) no-repeat center center/contain;
+}
+@media(max-width: 767px) {
+    .partenaires .partenaires-box-1,
+    .partenaires .partenaires-box-2,
+    .partenaires .partenaires-box-3,
+    .partenaires .partenaires-box-4
+    {
+        width: 70%;
+    }
 }
 
 .choixfilms {

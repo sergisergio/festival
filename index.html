@@ -11,64 +11,135 @@
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
-    <!--<link rel="stylesheet" href="assets/css/demo.css">-->
     <link rel="stylesheet" href="assets/css/component.css">
     <link rel="stylesheet" href="assets/css/content.css">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
+    <!-- JS -->
     <script src="assets/js/modernizr.custom.js"></script>
+    <!-- prévoir opengraph pour partge réseaux sociaux et référencement -->
     <style>
-    .scrollToTop{
-	width:60px; 
-	height:60px;
-	padding:16px; 
-	text-align:center; 
-	background: #8EC06F !important;
-    color: #fff !important;
-	font-weight: bold;
-	text-decoration: none;
-	position:fixed;
-	bottom:20px;
-	right:40px;
-	display:none;
-	background: url('arrow_up.png') no-repeat 0px 20px;
-        z-index: 99999;
-}
-.scrollToTop:hover{
-	text-decoration:none;
-}
+        .scrollToTop {
+            width: 60px;
+            height: 60px;
+            padding: 16px;
+            text-align: center;
+            background: #8EC06F !important;
+            color: #fff !important;
+            font-weight: bold;
+            text-decoration: none;
+            position: fixed;
+            bottom: 20px;
+            right: 40px;
+            display: none;
+            background: url('arrow_up.png') no-repeat 0px 20px;
+            z-index: 99999;
+            box-shadow: 6px 6px 25px 18px rgba(0, 0, 0, 0.2);
+        }
+        
+        @media(max-width: 991px) {
+            .scrollToTop {
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+        
+        .scrollToTop:hover {
+            text-decoration: none;
+        }
+        
+        .ion-arrow-up-c {
+            font-size: 30px;
+            margin: -8px;
+            position: absolute;
+        }
+        
         #corps {
-  /*border : solid green 5px;*/
-  border-radius : 10px;
-    width : 80%;
-  display : block;
-  margin : 50px auto;
-  background-color : #fff;
-}
+            /*border : solid green 5px;*/
+            border-radius: 10px;
+            width: 80%;
+            display: block;
+            margin: 50px auto;
+            background-color: #fff;
+        }
+        
         ul li {
-            list-style : none;
+            list-style: none;
             line-height: 1.2;
         }
+        
         .button2 {
             width: 50% !important;
             padding: 0px !important;
             margin: -10px auto 0 auto !important;
             display: block !important;
+            height: 50% !important;
+            line-height: 1px !important;
         }
+        
         @media(max-width: 767px) {
             .button2 {
                 height: 50% !important;
                 line-height: 1px !important;
             }
         }
+        
+        @media(max-width: 500px) {
+            .button2 {
+                width: 100% !important;
+                height: 40% !important;
+                line-height: 1px !important;
+            }
+        }
+        
         @media(min-width: 768px) {
             .navbar-nav > li > a {
-    padding-top: 22px;
-    padding-bottom: 15px;
+                padding-top: 22px;
+                padding-bottom: 15px;
+            }
+            #location {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
         }
-    
+        
+        @media(max-width: 767px) {
+            #registration-form {
+                width: 60%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        
+        @media(max-width: 500px) {
+            #registration-form {
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        
+        .content-style-overlay iframe {
+            margin-bottom: 70px;
+        }
+        
+        @media(max-width: 767px) {
+            .content-style-overlay iframe {
+                width: auto;
+                height: auto;
+            }
+        }
+        @media(max-width: 767px) {
+            .location iframe {
+                width: 100%;
+                height: auto;
+            }
+        }
     </style>
 </head>
 
 <body data-spy="scroll" data-target="#site-nav">
+    <!-- scroll-spy = défilement après clic lien menu" -->
+    <!-- LOGO et menu de navigation -->
     <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
         <div class="container">
             <div class="navbar-header">
@@ -92,6 +163,8 @@
         </div>
         <!-- /.container -->
     </nav>
+    <!-- FIN LOGO et menu de navigation -->
+    <!-- HEADER -->
     <header id="site-header" class="site-header valign-center">
         <div class="intro">
             <h2>Du 5 au 8 Août 2018 / Parc Monceau</h2>
@@ -106,16 +179,13 @@
                             <form méthod="post" action="#">
                                 <p>
                                     <label>Nom</label>
-                                    <input type="text" />
-                                </p>
+                                    <input type="text" /> </p>
                                 <p>
                                     <label>Prénom</label>
-                                    <input type="text" />
-                                </p>
+                                    <input type="text" /> </p>
                                 <p>
                                     <label>Email</label>
-                                    <input type="text" />
-                                </p>
+                                    <input type="text" /> </p>
                                 <select name="menu_destination" class="choixfilms">
                                     <option value="#">Dimanche 05 août à 18h00 : Into the wild</option>
                                     <option value="#">Dimanche 05 août à 20h00 : Le cercle des poètes disparus</option>
@@ -138,15 +208,18 @@
                     </div>
                 </div>
             </div>
-            <!--<a class="btn btn-white" data-scroll href="#registration">Pré-inscription</a>--></div>
+        </div>
     </header>
+    <!-- FIN HEADER -->
+    <!-- PRESENTATION DU FESTIVAL -->
     <section id="festival" class="section about">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <div class="debut">
                         <h3 class="section-title galerie-titre">Présentation</h3>
-                        <p>C'est avec une immense joie que notre association "Les Films de Plein Air" vient d'être créée. Notre objectif ? Vous faire découvrir ou redécouvrir des films d'auteur, seul, en famille ou entre amis.
+                        <p>C'est avec une immense joie que notre association "Les Films de Plein Air" vient d'être créée.
+                            <br> Notre objectif ? Vous faire découvrir ou redécouvrir des films d'auteur, seul, en famille ou entre amis.
                             <br> Notre premier projet est un festival où nous espérons vous voir très nombreux !
                             <br> Si vous souhaitez plus d'informations, n'hésitez surtout pas à nous contacter, nous nous ferons un plaisir de vous répondre dans les meilleurs délais. </p>
                         <figure> <img alt="" class="img-responsive" src="assets/images/about-us.jpg"> </figure>
@@ -156,7 +229,8 @@
                 <div class="col-md-6 col-sm-12">
                     <div class="debut">
                         <h3 class="section-title multiple-title galerie-titre">Le festival</h3>
-                        <p>Le festival des Films de Plein Air se déroulera du 5 au 8 août 2018 au Parc Monceau à Paris : c'est l'occasion pour vous de découvrir ce superbe parc avant d'être devant le (très) grand écran et de profiter d'une bonne soirée dans un cadre plus que convivial ( des transats seront en location).
+                        <p>Le festival des Films de Plein Air se déroulera du 5 au 8 août 2018 au Parc Monceau à Paris.
+                            <br>C'est l'occasion pour vous de découvrir ce superbe parc avant d'être devant le (très) grand écran et de profiter d'une bonne soirée dans un cadre plus que convivial ( des transats seront en location).
                             <br>N'hésitez pas à vous pré-inscrire à nos séances, ce qui nous permettra d'organiser ce festival à la perfection !
                             <br> La participation à ce festival est GRATUITE ! </p>
                     </div>
@@ -167,24 +241,19 @@
         </div>
         <!-- /.container -->
     </section>
-    <!--<section class="section bg-image-1 facts text-center">
-
-    </section>-->
+    <!-- FIN PRESENTATION DU FESTIVAL -->
+    <!-- GOOGLE MAPS -->
     <section id="location" class="section location">
         <div class="container-fluid">
             <div class="row">
-                <!--<div class="col-sm-3">
-                    <h3 class="section-title">Cà se passe ici !</h3>
-                    <address>
-                        <p>Parc Monceau<br> 35 boulevard de Courcelles<br> 75008 PARIS<br> Téléphone : 06.47.51.22.85<br> Email: contact@philippetraon.com</p>
-                    </address>
-                </div>-->
                 <div class="col-sm-12">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10495.532706460806!2d2.299344643593271!3d48.8795035575588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc+Monceau!5e0!3m2!1sfr!2sfr!4v1514225756510" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </section>
+    <!-- FIN GOOGLE MAPS -->
+    <!-- FILMS -->
     <section id="films" class="section location">
         <div class="container">
             <div class="row">
@@ -205,15 +274,13 @@
                         <button type="button" class="button2">Voir plus</button>
                         <div class="morph-content">
                             <div>
-                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Fermer</span>
                                     <h2>Bande-annonce</h2>
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/zupSm0fnG1Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-                                    <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
-                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-                                    <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
-                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
-                                    <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+                                    <h2>Synopsis</h2>
+                                    <p>Tout juste diplômé de l'université, Christopher McCandless, 22 ans, est promis à un brillant avenir. Pourtant, tournant le dos à l'existence confortable et sans surprise qui l'attend, le jeune homme décide de prendre la route en laissant tout derrière lui.
+                                        <br> Des champs de blé du Dakota aux flots tumultueux du Colorado, en passant par les communautés hippies de Californie, Christopher va rencontrer des personnages hauts en couleur. Chacun, à sa manière, va façonner sa vision de la vie et des autres.
+                                        <br> Au bout de son voyage, Christopher atteindra son but ultime en s'aventurant seul dans les étendues sauvages de l'Alaska pour vivre en totale communion avec la nature. </p>
                                 </div>
                             </div>
                         </div>
@@ -221,15 +288,17 @@
                     <!-- morph-button -->
                 </div>
                 <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dimanche"> <img src="assets/images/films/cercle.jpg" class="img-responsive  affiche">
-                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Dimanche 5 août 20:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
                         <button type="button" class="button2">Voir plus</button>
                         <div class="morph-content">
                             <div>
-                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
-                                    <h2>About Parsley</h2>
-                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Fermer</span>
+                                    <h2>Bande-annonce</h2>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oGXlLXLjsFA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <h2>Synopsis</h2>
+                                    <p> Todd Anderson, un garçon plutôt timide, est envoyé dans la prestigieuse académie de Welton, réputée pour être l'une des plus fermées et austères des États-Unis, là où son frère avait connu de brillantes études.
+                                        <br> C'est dans cette université qu'il va faire la rencontre d'un professeur de lettres anglaises plutôt étrange, Mr Keating, qui les encourage à toujours refuser l'ordre établi. Les cours de Mr Keating vont bouleverser la vie de l'étudiant réservé et de ses amis... </p>
                                 </div>
                             </div>
                         </div>
@@ -237,15 +306,18 @@
                     <!-- morph-button -->
                 </div>
                 <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dimanche"> <img src="assets/images/films/2001.jpg" class="img-responsive  affiche">
-                    <!--<div class="button-icon" type="button"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Dimanche 5 août 22:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
                         <button type="button" class="button2">Voir plus</button>
                         <div class="morph-content">
                             <div>
-                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
-                                    <h2>About Parsley</h2>
-                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Fermer</span>
+                                    <h2>Bande-annonce</h2>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xRzSf7I-ozg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <h2>Synopsis</h2>
+                                    <p> A l'aube de l'Humanité, dans le désert africain, une tribu de primates subit les assauts répétés d'une bande rivale, qui lui dispute un point d'eau. La découverte d'un monolithe noir inspire au chef des singes assiégés un geste inédit et décisif. Brandissant un os, il passe à l'attaque et massacre ses adversaires. Le premier instrument est né.
+                                        <br> En 2001, quatre millions d'années plus tard, un vaisseau spatial évolue en orbite lunaire au rythme langoureux du "Beau Danube Bleu". A son bord, le Dr. Heywood Floyd enquête secrètement sur la découverte d'un monolithe noir qui émet d'étranges signaux vers Jupiter.
+                                        <br> Dix-huit mois plus tard, les astronautes David Bowman et Frank Poole font route vers Jupiter à bord du Discovery. Les deux hommes vaquent sereinement à leurs tâches quotidiennes sous le contrôle de HAL 9000, un ordinateur exceptionnel doué d'intelligence et de parole. Cependant, HAL, sans doute plus humain que ses maîtres, commence à donner des signes d'inquiétude : à quoi rime cette mission et que risque-t-on de découvrir sur Jupiter ? </p>
                                 </div>
                             </div>
                         </div>
@@ -253,15 +325,16 @@
                     <!-- morph-button -->
                 </div>
                 <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter lundi"> <img src="assets/images/films/bon.jpg" class="img-responsive  affiche">
-                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Lundi 6 août 18:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
                         <button type="button" class="button2">Voir plus</button>
                         <div class="morph-content">
                             <div>
-                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
-                                    <h2>About Parsley</h2>
-                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Fermer</span>
+                                    <h2>Bande-annonce</h2>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WA1hCZFOPqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <h2>Synopsis</h2>
+                                    <p> Pendant la Guerre de Sécession, trois hommes, préférant s'intéresser à leur profit personnel, se lancent à la recherche d'un coffre contenant 200 000 dollars en pièces d'or volés à l'armée sudiste. Tuco sait que le trésor se trouve dans un cimetière, tandis que Joe connaît le nom inscrit sur la pierre tombale qui sert de cache. Chacun a besoin de l'autre. Mais un troisième homme entre dans la course : Setenza, une brute qui n'hésite pas à massacrer femmes et enfants pour parvenir à ses fins. </p>
                                 </div>
                             </div>
                         </div>
@@ -275,9 +348,11 @@
                         <button type="button" class="button2">Voir plus</button>
                         <div class="morph-content">
                             <div>
-                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
-                                    <h2>About Parsley</h2>
-                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Fermer</span>
+                                    <h2>Bande-annonce</h2>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AEh2eRhZNkA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <h2>Synopsis</h2>
+                                    <p>L'histoire à la fois drôle et poignante d'Edward Bloom, un père débordant d'imagination, et de son fils William. Ce dernier retourne au domicile familial après l'avoir quitté longtemps auparavant, pour être au chevet de son père, atteint d'un cancer. Il souhaite mieux le connaître et découvrir ses secrets avant qu'il ne soit trop tard. L'aventure débutera lorsque William tentera de discerner le vrai du faux dans les propos de son père mourant. </p>
                                 </div>
                             </div>
                         </div>
@@ -285,15 +360,17 @@
                     <!-- morph-button -->
                 </div>
                 <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter lundi"> <img src="assets/images/films/volcoucou.jpg" class="img-responsive  affiche">
-                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Lundi 6 août 22:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
                         <button type="button" class="button2">Voir plus</button>
                         <div class="morph-content">
                             <div>
-                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
-                                    <h2>About Parsley</h2>
-                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Fermer</span>
+                                    <h2>Bande-annonce</h2>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AEh2eRhZNkA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <h2>Synopsis</h2>
+                                    
+                                    <p>Interdit aux moins de 12 ans<br><br> Rebellion dans un hôpital psychiatrique à l'instigation d'un malade qui se révolte contre la dureté d'une infirmière. </p>
                                 </div>
                             </div>
                         </div>
@@ -307,9 +384,11 @@
                         <button type="button" class="button2">Voir plus</button>
                         <div class="morph-content">
                             <div>
-                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
-                                    <h2>About Parsley</h2>
-                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Fermer</span>
+                                    <h2>Bande-annonce</h2>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/f3v9pRa5dR8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <h2>Synopsis</h2>
+                                    <p> Will Hunting est un authentique génie mais également un rebelle aux élans imprévisibles. Il est né dans le quartier populaire de South Boston et a arrêté très tôt ses études, refusant le brillant avenir que pouvait lui procurer son intelligence. Il vit désormais entouré d'une bande de copains et passe son temps dans les bars a chercher la bagarre et à commettre quelques petits délits qui risquent bien de l'envoyer en prison. C'est alors que ses dons prodigieux en mathématiques attirent l'attention du professeur Lambeau, du Massachusetts Institute of Technology... </p>
                                 </div>
                             </div>
                         </div>
@@ -317,15 +396,17 @@
                     <!-- morph-button -->
                 </div>
                 <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter mardi"> <img src="assets/images/films/american.jpg" class="img-responsive  affiche">
-                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
+                    
                     <div class="titre-film">Mardi 7 août 20:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
                         <button type="button" class="button2">Voir plus</button>
                         <div class="morph-content">
                             <div>
-                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
-                                    <h2>About Parsley</h2>
-                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Fermer</span>
+                                    <h2>bande-annonce</h2>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pnSBTE5EIu8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <h2>Synopsis</h2>
+                                    <p>Une maison de rêve, un pavillon bourgeois discrètement cossu dissimule dans une banlieue résidentielle, c'est ici que résident Lester Burnhamm, sa femme Carolyn et leur fille Jane. L'agitation du monde et sa violence semblent bien loin ici. Mais derrière cette respectable façade se tisse une étrange et grinçante tragi-comédie familiale ou désirs inavoués, frustrations et violences refoulées conduiront inexorablement un homme vers la mort.  </p>
                                 </div>
                             </div>
                         </div>
@@ -333,15 +414,17 @@
                     <!-- morph-button -->
                 </div>
                 <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter mardi"> <img src="assets/images/films/imitation.jpg" class="img-responsive  affiche">
-                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
+                    
                     <div class="titre-film">Mardi 7 août 22:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
                         <button type="button" class="button2">Voir plus</button>
                         <div class="morph-content">
                             <div>
-                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
-                                    <h2>About Parsley</h2>
-                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Fermer</span>
+                                    <h2>Bande-annonce</h2>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QwTX6Qq7QcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <h2>Synopsis</h2>
+                                    <p>1940 : Alan Turing, mathématicien, cryptologue, est chargé par le gouvernement Britannique de percer le secret de la célèbre machine de cryptage allemande Enigma, réputée inviolable.  </p>
                                 </div>
                             </div>
                         </div>
@@ -349,15 +432,17 @@
                     <!-- morph-button -->
                 </div>
                 <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter mercredi"> <img src="assets/images/films/bienvenue.jpg" class="img-responsive  affiche">
-                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
+                    
                     <div class="titre-film">Mercredi 8 août 18:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
                         <button type="button" class="button2">Voir plus</button>
                         <div class="morph-content">
                             <div>
-                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
-                                    <h2>About Parsley</h2>
-                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Fermer</span>
+                                    <h2>bande-annonce</h2>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7u3RrbNpRUQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <h2>Synopsis</h2>
+                                    <p> Dans un monde parfait, Gattaca est un centre d'études et de recherches spatiales pour des jeunes gens au patrimoine génétique impeccable. Jérôme, candidat idéal, voit sa vie détruite par un accident tandis que Vincent, enfant naturel, rêve de partir pour l'espace. Chacun des deux va permettre à l'autre d'obtenir ce qu'il souhaite en déjouant les lois de Gattaca. </p>
                                 </div>
                             </div>
                         </div>
@@ -365,15 +450,16 @@
                     <!-- morph-button -->
                 </div>
                 <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter mercredi"> <img src="assets/images/films/brother.jpg" class="img-responsive  affiche">
-                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
                     <div class="titre-film">Mercredi 8 août 20:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
                         <button type="button" class="button2">Voir plus</button>
                         <div class="morph-content">
                             <div>
-                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
-                                    <h2>About Parsley</h2>
-                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Fermer</span>
+                                    <h2>bande-annonce</h2>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0D_ixBNpeyw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <h2>Synopsis</h2>
+                                    <p> Dans le Mississippi profond, pendant la Grande Depression. Trois prisonniers enchainés s'évadent du bagne : Ulysses Everett McGill, le gentil et simple Delmar et l'éternel râleur Pete. Ils tentent l'aventure de leur vie pour retrouver leur liberté et leur maison. N'ayant rien à perdre et unis par leurs chaînes, ils entreprennent un voyage semé d'embuches et riche en personnages hauts en couleur. Mais ils devront redoubler d'inventivité pour échapper au mystérieux et rusé shérif Cooley, lancé à leur poursuite... </p>
                                 </div>
                             </div>
                         </div>
@@ -381,15 +467,17 @@
                     <!-- morph-button -->
                 </div>
                 <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter mercredi"> <img src="assets/images/films/forrest.jpg" class="img-responsive  affiche">
-                    <!--<div class="button-icon"><span class="icon icon-zoom-in"></span></div>-->
+                   
                     <div class="titre-film">Mercredi 8 août 22:00</div>
                     <div class="morph-button morph-button-overlay morph-button-fixed">
                         <button type="button" class="button2">Voir plus</button>
                         <div class="morph-content">
                             <div>
-                                <div class="content-style-overlay"> <span class="icon icon-close">Close the overlay</span>
-                                    <h2>About Parsley</h2>
-                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                <div class="content-style-overlay"> <span class="icon icon-close">Fermer</span>
+                                    <h2>bande-annonce</h2>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vhbOdIJyalo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <h2>Synopsis</h2>
+                                    <p> Quelques décennies d'histoire américaine, des années 1940 à la fin du XXème siècle, à travers le regard et l'étrange odyssée d'un homme simple et pur, Forrest Gump. </p>
                                 </div>
                             </div>
                         </div>
@@ -399,7 +487,11 @@
             </div>
         </div>
     </section>
+    <!-- FIN FILMS -->
+    <!-- IMAGE PARALLAXE 1 -->
     <section id="facts" class="section bg-image-1 facts text-center"> </section>
+    <!-- FIN IMAGE PARALLAXE 1 -->
+    <!-- ACTUALITES -->
     <section id="actualites" class="">
         <div class="container">
             <div class="row">
@@ -410,21 +502,8 @@
                 <div class="col-md-6 col-sm-12">
                     <div class="articles">
                         <h4 class="text-center galerie-titre">La météo à Paris</h4>
-                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus cursus auctor. Suspendisse eu condimentum augue. Donec ut consequat diam. Suspendisse id viverra dolor. Fusce at felis mollis, luctus urna a, rutrum diam. Proin rhoncus et velit vel lobortis. Aliquam erat volutpat. </p>
-                        <!--<div class="morph-button morph-button-modal morph-button-modal-3 morph-button-fixed">
-                            <button type="button" class="plus pull-right">Lire l'article</button>
-                            <div class="morph-content">
-                                <div>
-                                    <div class="content-style-form content-style-form-1"> <span class="icon icon-close"></span>
-                                        <h2>Article</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus cursus auctor. Suspendisse eu condimentum augue. Donec ut consequat diam. Suspendisse id viverra dolor. Fusce at felis mollis, luctus urna a, rutrum diam. Proin rhoncus et velit vel lobortis. Aliquam erat volutpat. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
                         <div id="corps">
-                            
-                        <div id="meteo"></div>
+                            <div id="meteo"></div>
                         </div>
                     </div>
                 </div>
@@ -432,31 +511,25 @@
                     <div class="articles">
                         <h4 class="text-center galerie-titre">Quelques liens utiles</h4>
                         <div id="corps">
-                            
-                            <ul>
-                            <li><a href="#" target="_blank">Mairie de Paris</a></li>
-                            <li><a href="#" target="_blank">RATP</a></li>
-                                <li><a href="#" target="_blank">Velib</a></li>
-                                </ul>
-                        </div>
-                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus cursus auctor. Suspendisse eu condimentum augue. Donec ut consequat diam. Suspendisse id viverra dolor. Fusce at felis mollis, luctus urna a, rutrum diam. Proin rhoncus et velit vel lobortis. Aliquam erat volutpat. </p>
-                       <!--<div class="morph-button morph-button-modal morph-button-modal-3 morph-button-fixed">
-                            <button type="button" class="plus lire pull-right">Lire l'article</button>
-                            <div class="morph-content">
-                                <div>
-                                    <div class="content-style-form content-style-form-1"> <span class="icon icon-close"></span>
-                                        <h2>Article</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus cursus auctor. Suspendisse eu condimentum augue. Donec ut consequat diam. Suspendisse id viverra dolor. Fusce at felis mollis, luctus urna a, rutrum diam. Proin rhoncus et velit vel lobortis. Aliquam erat volutpat. </p>
-                                    </div>
+                            <div class="container">
+                                <div class="row">
+                                    <ul>
+                                        <li><a href="https://www.paris.fr/" target="_blank">Mairie de Paris</a></li>
+                                        <li><a href="https://www.ratp.fr/" target="_blank">RATP</a></li>
+                                        <li><a href="https://www.velib-metropole.fr/#/" target="_blank">Velib</a></li>
+                                    </ul>
                                 </div>
                             </div>
-                        </div>-->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
+    <!-- FIN ACTUALITES -->
+    <!-- IMAGE PARALLAXE 2 -->
     <section id="facts" class="section bg-image-2 facts text-center"> </section>
+    <!-- FIN IMAGE PARALLAXE 2 -->
+    <!-- CONTACT -->
     <section id="contact" class="section registration">
         <div class="container">
             <div class="row">
@@ -490,6 +563,8 @@
             </form>
         </div>
     </section>
+    <!-- FIN CONTACT -->
+    <!-- PARTENAIRES -->
     <section class="section partenaires">
         <div class="container">
             <div class="row">
@@ -497,21 +572,23 @@
                     <h3 class="section-title text-center galerie-titre">Nos partenaires</h3> </div>
             </div>
             <div class="row">
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 col-xs-3">
                     <a href="https://www.paris.fr/" target="_blank" class="partenaires-box partenaires-box-1"></a>
                 </div>
-                <div class="col-md-3  col-sm-6">
-                    <a href="http://www.velib.paris/" target="_blank" class="partenaires-box partenaires-box-2"></a>
+                <div class="col-md-3  col-sm-6 col-xs-3">
+                    <a href="https://www.velib-metropole.fr/#/" target="_blank" class="partenaires-box partenaires-box-2"></a>
                 </div>
-                <div class="col-md-3  col-sm-6">
+                <div class="col-md-3  col-sm-6 col-xs-3">
                     <a href="http://openclassrooms.com/" target="_blank" class="partenaires-box partenaires-box-3"></a>
                 </div>
-                <div class="col-md-3  col-sm-6">
+                <div class="col-md-3  col-sm-6 col-xs-3">
                     <a href="https://www.cinemasgaumontpathe.com/" target="_blank" class="partenaires-box partenaires-box-4"></a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- FIN PARTENAIRES -->
+    <!-- FOOTER -->
     <footer class="site-footer">
         <div class="container">
             <div class="row">
@@ -520,16 +597,16 @@
                     <ul class="social-block">
                         <li><a href=""><i class="ion-social-twitter"></i></a></li>
                         <li><a href=""><i class="ion-social-facebook"></i></a></li>
-                        <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
                         <li><a href=""><i class="ion-social-googleplus"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-    
-    <a href="#" class="scrollToTop">Top
+    <!-- FIN PARTENAIRES -->
+    <!-- SCROLLTOTOP --><a href="#" class="scrollToTop"><i class="ion-arrow-up-c"></i>
 </a>
+    <!-- FIN SCROLLTOTOP -->
     <!-- script -->
     <script src="frameworks/jquery/dist/jquery.min.js"></script>
     <script src="frameworks/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -537,6 +614,7 @@
     <script src="assets/js/classie.js"></script>
     <script src="assets/js/uiMorphingButton_fixed.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- SCRIPT MORPH BUTTONS -->
     <script>
         (function () {
             var docElem = window.document.documentElement
@@ -606,6 +684,8 @@
             });
         })();
     </script>
+    <!-- FIN SCRIPT MORPH BUTTONS -->
+    <!-- SCRIPT FILTRES -->
     <script>
         $(document).ready(function () {
             $(".filter-button").click(function () {
@@ -627,77 +707,65 @@
             $(this).addClass("active");
         });
     </script>
-    
+    <!-- FIN SCRIPT FILTRES -->
+    <!-- SCROLLTOTOP -->
     <script>
-        $(document).ready(function(){
-	
-	//Check to see if the window is top if not then display button
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 100) {
-			$('.scrollToTop').fadeIn();
-		} else {
-			$('.scrollToTop').fadeOut();
-		}
-	});
-	
-	//Click event to scroll to top
-	$('.scrollToTop').click(function(){
-		$('html, body').animate({scrollTop : 0},800);
-		return false;
-	});
-	
-});
+        $(document).ready(function () {
+            //Check to see if the window is top if not then display button
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollToTop').fadeIn();
+                }
+                else {
+                    $('.scrollToTop').fadeOut();
+                }
+            });
+            //Click event to scroll to top
+            $('.scrollToTop').click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+        });
     </script>
+    <!-- FIN SCROLLTOTOP -->
+    <!-- METEO -->
     <script>
         function ajaxGet(url, callback) {
-    var req = new XMLHttpRequest();
-    req.open("GET", url);
-    req.addEventListener("load", function () {
-        if (req.status >= 200 && req.status < 400) {
-            // Appelle la fonction callback en lui passant la réponse de la requête
-            callback(req.responseText);
-        } else {
-            console.error(req.status + " " + req.statusText + " " + url);
+            var req = new XMLHttpRequest();
+            req.open("GET", url);
+            req.addEventListener("load", function () {
+                if (req.status >= 200 && req.status < 400) {
+                    // Appelle la fonction callback en lui passant la réponse de la requête
+                    callback(req.responseText);
+                }
+                else {
+                    console.error(req.status + " " + req.statusText + " " + url);
+                }
+            });
+            req.addEventListener("error", function () {
+                console.error("Erreur réseau avec l'URL " + url);
+            });
+            req.send(null);
         }
-    });
-    req.addEventListener("error", function () {
-        console.error("Erreur réseau avec l'URL " + url);
-    });
-    req.send(null);
-}
-
-ajaxGet("https://api.wunderground.com/api/50a65432f17cf542/conditions/q/France/Paris.json", function (reponse) {
-
-    var meteo = JSON.parse(reponse);
-
-    // Récupération de certains résultats
-
-    var temperature = meteo.current_observation.temp_c;
-
-    var humidite = meteo.current_observation.relative_humidity;
-
-    var imageUrl = meteo.current_observation.icon_url;
-
-    // Affichage des résultats
-
-    var conditionsElt = document.createElement("div");
-
-    conditionsElt.textContent = "Il fait actuellement " + temperature +
-
-        "°C et l'humidité est de " + humidite;
-
-    var imageElt = document.createElement("img");
-
-    imageElt.src = imageUrl;
-
-    var meteoElt = document.getElementById("meteo");
-
-    meteoElt.appendChild(conditionsElt);
-
-    meteoElt.appendChild(imageElt);
-
-});
+        ajaxGet("https://api.wunderground.com/api/50a65432f17cf542/conditions/q/France/Paris.json", function (reponse) {
+            var meteo = JSON.parse(reponse);
+            // Récupération de certains résultats
+            var temperature = meteo.current_observation.temp_c;
+            var humidite = meteo.current_observation.relative_humidity;
+            var imageUrl = meteo.current_observation.icon_url;
+            // Affichage des résultats
+            var conditionsElt = document.createElement("div");
+            conditionsElt.textContent = "Il fait actuellement " + temperature + "°C et l'humidité est de " + humidite;
+            var imageElt = document.createElement("img");
+            imageElt.src = imageUrl;
+            var meteoElt = document.getElementById("meteo");
+            meteoElt.appendChild(conditionsElt);
+            meteoElt.appendChild(imageElt);
+        });
     </script>
+    <!-- FIN METEO -->
 </body>
 
 </html>
